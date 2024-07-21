@@ -20,9 +20,8 @@ body {
     }
     div.contenu {
         background-color: white;
-        margin: 0px 10% 80px 10%;
-        padding: 30px;
-        min-width: 350px;
+        margin: 5px 2px 50px 1px;
+        padding: 0px 8px 20px 8px;
         box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
     }
     /* Style pour le titre h1 */
@@ -47,7 +46,12 @@ body {
         width: 100%;
     }
     table.info{
-        position: absolute; bottom:0; width:100%; color:white; background-color: #6c829dc0;
+        position: absolute;
+        bottom:0;
+        width:100%;
+        color:white;
+        background-color: #6c829dc0;
+        height: 50px;
     
     }
     div.info{
@@ -55,6 +59,12 @@ body {
     }
     table.info td{
         text-align: center;
+        font-size: 12px;
+    }
+    table.info th{
+        font-size: 14px;
+        padding-bottom: 8px;
+
     }
     img.info {
         display: block;
@@ -65,14 +75,13 @@ body {
 
     }
     div.colonne {
-        width: 45%;
-        margin-top: 20px;
+        width: 100%;
         margin-top: 20px;
     }
     div.colonne1{
         /*background-color: lightblue;*/
         display: inline-block;
-        margin-right: 10%;
+    
     }
     div.colonne h2 {
         text-align: center;
@@ -81,9 +90,7 @@ body {
         border-bottom: 10px solid #6c829d;
         padding-bottom: 5px;
     }
-    div.colonne2{
-        float: right;
-    }
+
     div.ingrédient p {
         border: 2px solid black;
         text-align:center;
@@ -98,4 +105,43 @@ body {
     }
     *{
         overflow:auto;
+    }
+    /*style pour ordi uniquement*/
+    @media only screen and (min-width: 768px) {
+        div.contenu {
+            min-width: 350px;
+            margin: 0px 10% 80px 10%;
+            padding: 30px;
+        }
+        table.info{
+            height: 80px;
+        
+        }
+        table.info td{
+            font-size: 14px;
+        }
+        table.info th{
+            font-size: 16px;
+    
+        }
+        div.colonne {
+            width: 45%;
+        }
+        div.colonne1{
+            /*background-color: lightblue;*/
+            display: inline-block;
+            margin-right: 10%;
+        }
+        div.colonne2{
+            float: right;
+        }
+    
+       /* @media only screen and (min-width: 900px) {
+            div.contenu {
+                margin-left:auto;
+                margin-right:auto;
+                width: 645px;
+            }
+        } */
+
     }
